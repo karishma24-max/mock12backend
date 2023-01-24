@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-const UserSchema = new mongoose.Schema(
+const jobSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -26,6 +26,6 @@ const UserSchema = new mongoose.Schema(
   }
 );
 
-const Jobs = mongoose.model("job", UserSchema);
+const Jobs = mongoose.model("job", jobSchema);
 
 module.exports = Jobs;
