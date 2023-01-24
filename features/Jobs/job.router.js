@@ -25,7 +25,7 @@ server.post("/postjob", async (req, res) => {
   server.get("/getjob", async (req, res) => {
     try {
       let jobs = await Jobs.find();
-      res.send(post);
+      res.send(jobs);
     } catch (e) {
       res.status(404).send(e.message);
     }
