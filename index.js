@@ -6,7 +6,7 @@ const cors = require('cors');
 server.use(express.json());
 server.use(cors());
 const userRouter = require("./features/user/user.router.js")
-const jobRouter=require("./features/Jobs/job.router")
+const jobRouter=require("./features/Jobs/job.router.js")
 
 server.use("/user",userRouter);
 server.use("/jobs",jobRouter)

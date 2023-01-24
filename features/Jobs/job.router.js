@@ -30,3 +30,4 @@ server.post("/postjob", async (req, res) => {
       res.status(404).send(e.message);
     }
   });
+  module.exports = server;
